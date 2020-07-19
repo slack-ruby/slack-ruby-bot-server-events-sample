@@ -10,7 +10,7 @@ gem 'mongoid-scroll'
 gem 'newrelic-slack-ruby-bot'
 gem 'puma'
 gem 'slack-ruby-bot-server'
-gem 'slack-ruby-bot-server-events', github: 'slack-ruby/slack-ruby-bot-server-events'
+gem 'slack-ruby-bot-server-events'
 
 group :test do
   gem 'capybara'

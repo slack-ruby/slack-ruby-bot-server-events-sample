@@ -1,10 +1,3 @@
-GIT
-  remote: git://github.com/slack-ruby/slack-ruby-bot-server-events.git
-  revision: 42310430dbc32d8838fe8f6a6e3b9ea2d5455186
-  specs:
-    slack-ruby-bot-server-events (0.2.0)
-      slack-ruby-bot-server (>= 0.12.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -185,6 +178,8 @@ GEM
       rack-rewrite
       rack-server-pages
       slack-ruby-bot (>= 0.12.0)
+    slack-ruby-bot-server-events (0.1.0)
+      slack-ruby-bot-server (>= 0.12.0)
     slack-ruby-client (0.14.6)
       activesupport
       faraday (>= 0.9)
@@ -227,7 +222,7 @@ DEPENDENCIES
   rspec
   selenium-webdriver
   slack-ruby-bot-server
-  slack-ruby-bot-server-events!
+  slack-ruby-bot-server-events
   vcr
   webmock
 
