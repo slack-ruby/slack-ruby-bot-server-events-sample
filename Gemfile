@@ -4,13 +4,13 @@ source 'https://rubygems.org'
 
 ruby '2.6.6'
 
+gem 'irb'
 gem 'mongoid'
 gem 'mongoid-scroll'
 gem 'newrelic-slack-ruby-bot'
+gem 'puma'
 gem 'slack-ruby-bot-server'
 gem 'slack-ruby-bot-server-events', github: 'slack-ruby/slack-ruby-bot-server-events'
-gem 'puma'
-gem 'irb'
 
 group :test do
   gem 'capybara'
