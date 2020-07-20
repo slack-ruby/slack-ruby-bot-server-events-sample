@@ -13,3 +13,4 @@ Mongoid.load!(File.expand_path('config/mongoid.yml', __dir__), ENV['RACK_ENV'])
 require_relative 'lib/models'
 require_relative 'lib/commands'
 require_relative 'lib/events'
+require_relative 'lib/slash_commands'

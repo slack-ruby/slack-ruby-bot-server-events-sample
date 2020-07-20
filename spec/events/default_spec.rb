@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-describe 'events/member_joined_channel' do
+describe 'events/member_left_channel' do
   include Rack::Test::Methods
 
   def app
