@@ -85,7 +85,7 @@ GEM
       grape (~> 1.3)
     hashdiff (1.0.1)
     hashie (4.1.0)
-    i18n (1.8.3)
+    i18n (1.8.4)
       concurrent-ruby (~> 1.0)
     io-console (0.5.6)
     irb (1.2.4)
@@ -178,7 +178,7 @@ GEM
       rack-rewrite
       rack-server-pages
       slack-ruby-bot (>= 0.12.0)
-    slack-ruby-bot-server-events (0.1.0)
+    slack-ruby-bot-server-events (0.2.0)
       slack-ruby-bot-server (>= 0.12.0)
     slack-ruby-client (0.14.6)
       activesupport

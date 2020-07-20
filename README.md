@@ -75,6 +75,23 @@ A default handler is also fired on all other slash commands in [lib/slash_comman
 20:17:05 web.1  | I, [2020-07-19T20:17:05.703699 #77259]  INFO -- : Received a ping.
 ```
 
+### Actions
+
+Set the _Request Url_ in your app's Features under _Interactivity & Shortcuts_, e.g. `https://79f0f6335438.ngrok.io/api/slack/action`. Create an "on messages" shortcut, set the ID to `count-letters`.
+
+![](screenshots/actions-create.png)
+
+There's no need to invite the bot to a channel. Choose the "Count Letters" shortcut, the bot will respond with an ephemeral message from [lib/actions/count_letters.rb](lib/actions/count_letters.rb).
+
+![](screenshots/actions-demo.gif)
+
+A default handler is also fired on all other actions in [lib/actions/default.rb](lib/actions/default.rb) producing log output.
+
+```
+23:42:21 web.1  | I, [2020-07-19T23:42:21.394965 #78955]  INFO -- : Successfully connected team dblock (T04KB5WQH) to https://dblockdotorg.slack.com.
+23:43:43 web.1  | I, [2020-07-19T23:43:43.978877 #78955]  INFO -- : Counting letters in "The red brown fox jumped over a lazy dog."
+```
+
 ### Copyright & License
 
 Copyright [Daniel Doubrovkine](http://code.dblock.org), 2020
