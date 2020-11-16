@@ -38,7 +38,7 @@ Copy the URL, e.g. `https://79f0f6335438.ngrok.io`, and use it as the prefix for
 
 ### OAuth Scopes
 
-See [config/initializers/slack-ruby-bot-server.rb](config/initializers/slack-ruby-bot-server.rb) for the required OAuth scopes. If you get `Slack::Web::Api::Errors::MissingScope: missing_scope` errors, you are missing a scope in your app configuration.
+See [config/initializers/slack_ruby_bot_server.rb](config/initializers/slack_ruby_bot_server.rb) for the required OAuth scopes. If you get `Slack::Web::Api::Errors::MissingScope: missing_scope` errors, you are missing a scope in your app configuration.
 
 ### Events
 
