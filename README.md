@@ -16,11 +16,11 @@ Create `.env` file with the following settings.
 ```
 SLACK_CLIENT_ID=...
 SLACK_CLIENT_SECRET=...
-SLACK_OAUTH_SCOPE=bot,commands
 SLACK_SIGNING_SECRET=...
+SLACK_VERIFICATION_TOKEN=...
 ```
 
-Get your signing secret from [your app's](https://api.slack.com/apps) _Basic Information_ settings.
+Get the values from from [your app's](https://api.slack.com/apps) _Basic Information_ settings.
 
 Run `bundle install` and `foreman start`.
 
@@ -35,6 +35,10 @@ ngrok http 5000
 ```
 
 Copy the URL, e.g. `https://79f0f6335438.ngrok.io`, and use it as the prefix for your events, slash commands, and interactive message buttons.
+
+### OAuth Scopes
+
+See [config/initializers/slack-ruby-bot-server.rb](config/initializers/slack-ruby-bot-server.rb) for the required OAuth scopes. If you get `Slack::Web::Api::Errors::MissingScope: missing_scope` errors, you are missing a scope in your app configuration.
 
 ### Events
 

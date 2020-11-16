@@ -12,6 +12,6 @@ describe 'index.html', js: true, type: :feature do
   end
   it 'includes a link to add to slack with the client id' do
     expect(title).to eq('Slack Ruby Bot Server')
-    expect(first('p[id=register] a')['href']).to eq 'https://slack.com/oauth/authorize?scope=bot&client_id=slack-client-id'
+    expect(first('p[id=register] a')['href']).to eq 'https://slack.com/oauth/v2/authorize?scope=users:read+channels:read+groups:read+chat:write+commands+incoming-webhook&client_id=slack-client-id'
   end
 end
