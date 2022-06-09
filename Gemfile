@@ -14,7 +14,7 @@ gem 'slack-ruby-bot-server-events'
 
 group :test do
   gem 'capybara'
-  gem 'database_cleaner'
+  gem 'database_cleaner-mongoid'
   gem 'fabrication'
   gem 'faker'
   gem 'rack-test'
