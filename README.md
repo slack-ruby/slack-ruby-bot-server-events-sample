@@ -1,7 +1,7 @@
 Slack Ruby Bot Server Events Sample
 ===================================
 
-[![Build Status](https://travis-ci.org/slack-ruby/slack-ruby-bot-server-events-sample.svg?branch=master)](https://travis-ci.org/slack-ruby/slack-ruby-bot-server-events-sample)
+[![test](https://github.com/slack-ruby/slack-ruby-bot-server-events-sample/actions/workflows/test.yml/badge.svg)](https://github.com/slack-ruby/slack-ruby-bot-server-events-sample/actions/workflows/test.yml)
 
 ## What is this?
 
