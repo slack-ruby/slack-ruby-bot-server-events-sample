@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '2.6.5'
+ruby '3.1.1'
 
 gem 'irb'
 gem 'mongoid'
@@ -23,4 +23,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'vcr'
   gem 'webmock'
+  gem 'webrick'
 end
