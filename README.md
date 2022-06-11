@@ -1,7 +1,19 @@
+
 Slack Ruby Bot Server Events Sample
 ===================================
 
 [![test](https://github.com/slack-ruby/slack-ruby-bot-server-events-sample/actions/workflows/test.yml/badge.svg)](https://github.com/slack-ruby/slack-ruby-bot-server-events-sample/actions/workflows/test.yml)
+
+- [Slack Ruby Bot Server Events Sample](#slack-ruby-bot-server-events-sample)
+  - [What is this?](#what-is-this)
+  - [Running the Sample](#running-the-sample)
+    - [Settings](#settings)
+    - [Install App](#install-app)
+    - [OAuth Scopes](#oauth-scopes)
+    - [Events](#events)
+    - [Slash Commands](#slash-commands)
+    - [Actions](#actions)
+    - [Copyright & License](#copyright--license)
 
 ## What is this?
 
@@ -64,9 +76,11 @@ A default handler is also fired on all other events in [lib/events/default.rb](l
 
 ### Slash Commands
 
-Create a `/ping` Slash command.
+Create a `/ping` Slash command. Set the _Request URL_, e.g. `https://79f0f6335438.ngrok.io/api/slack/command`.
 
 ![](screenshots/slash-commands-ping.png)
+
+![](screenshots/slash-commands-ping-edit.png)
 
 There's no need to invite the bot to a channel. Try `/ping`, the bot will respond with `pong` from [lib/slash_commands/ping.rb](lib/slash_commands/ping.rb).
 
