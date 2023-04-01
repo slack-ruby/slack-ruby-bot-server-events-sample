@@ -5,22 +5,20 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1.1
-      - uses: supercharge/mongodb-github-action@1.7.0
+      - uses: supercharge/mongodb-github-action@1.8.0
         with:
-          mongodb-version: '5.0'
+          mongodb-version: "5.0"
       - uses: browser-actions/setup-geckodriver@latest
         with:
-          geckodriver-version: 0.18.0
-      - uses: browser-actions/setup-firefox@latest
+          geckodriver-version: "0.32.2"
+      - uses: browser-actions/setup-firefox@v1
         with:
-          firefox-version: '54.0'
-      - run: |
-          bundle install
-      - uses: GabrielBB/xvfb-action@v1
+          firefox-version: "111.0.1"
+      - run: bundle install
+      - uses: coactions/setup-xvfb@v1
         with:
-          run: |
-            bundle exec rake
+          run: bundle exec rake
